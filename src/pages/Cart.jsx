@@ -4,7 +4,9 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Cart = ({ user }) => {
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cart")) || []
+  );
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [paymentAmount, setPaymentAmount] = useState(0);
@@ -93,7 +95,9 @@ const Cart = ({ user }) => {
 
   return (
     <div className="p-4 sm:p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">🛒 Your Cart</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+        🛒 Your Cart
+      </h1>
 
       {cart.length > 0 ? (
         <>
@@ -168,16 +172,24 @@ const Cart = ({ user }) => {
               &times;
             </button>
 
-            <h2 className="text-2xl font-bold mb-3 text-gray-800">Complete Your Payment</h2>
+            <h2 className="text-2xl font-bold mb-3 text-gray-800">
+              Complete Your Payment
+            </h2>
             <p className="text-gray-600 mb-6">
               Please pay
-              <span className="font-semibold text-blue-600"> Ksh. {paymentAmount.toFixed(2)} </span>
-              to the number below to process your order.
+              <span className="font-semibold text-blue-600">
+                {" "}
+                Ksh. {paymentAmount.toFixed(2)}{" "}
+              </span>
+              to the number below to confirm your order. The delivery fee will
+              be charged at the time of delivery.
             </p>
 
             {/* Phone Number + Copy Button */}
             <div className="flex items-center justify-center gap-3 bg-gray-100 rounded-lg p-3 mb-4">
-              <span className="font-semibold text-lg text-gray-800">0795 360 391</span>
+              <span className="font-semibold text-lg text-gray-800">
+                0795 360 391
+              </span>
               <button
                 onClick={() => {
                   navigator.clipboard.writeText("0795360391");

@@ -89,10 +89,10 @@ const Footer = ({ logoSrc }) => {
               </li>
               <li>
                 <Link
-                  to="/products"
+                  to="/errands"
                   className="text-gray-600 hover:text-gray-800"
                 >
-                  Shop
+                  Errands
                 </Link>
               </li>
               <li>

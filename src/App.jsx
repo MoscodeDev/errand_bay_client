@@ -67,8 +67,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}>
           {/* Public routes */}
-          <Route index element={<LandingPage user={user} />} />
-          <Route path="/products" element={<Products />} />
+          <Route index element={<Products />} />
+          <Route path="errands" element={<LandingPage user={user} />} />
           <Route path="/description/:slug/:id" element={<Description />} />
           <Route path="/about" element={<About />} />
 

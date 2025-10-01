@@ -94,8 +94,8 @@ const Nav = () => {
             <Link to="/" className="font-mono hover:underline hover:text-green-400 transition-all">
               Home
             </Link>
-            <Link to="/products" className="font-mono hover:underline hover:text-green-400">
-              Shop
+            <Link to="/errands" className="font-mono hover:underline hover:text-green-400">
+              Errands
             </Link>
             <Link to="/track-errand" className="font-mono hover:underline hover:text-green-400">
               My_Errands
@@ -179,8 +179,8 @@ const Nav = () => {
             <Link to="/" onClick={handleNavToggle} className="font-mono hover:underline hover:text-green-400 pt-3">
               Home
             </Link>
-            <Link to="/products" onClick={handleNavToggle} className="font-mono hover:underline hover:text-green-400">
-              Shop
+            <Link to="/errands" onClick={handleNavToggle} className="font-mono hover:underline hover:text-green-400">
+              Errands
             </Link>
             <Link to="/track-errand" onClick={handleNavToggle} className="font-mono hover:underline hover:text-green-400">
               My Errands
