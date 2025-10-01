@@ -41,7 +41,7 @@ const About = () => {
 
       <div className="text-center mt-10">
         <Link
-          to="/products"
+          to="/"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
         >
           Explore Our Products
